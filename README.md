@@ -15,8 +15,8 @@ Basic gui that classifies images of clothing and displays the predicted labels y
 
 ## Geting Started
 
-To get the project running you will need python 3.6 and the packages outlined in the `requirements.txt` file installed. The installation guide bellow requires [Anaconda](https://www.anaconda.com/download/). 
-If you do not have Anaconda installed feel free to run the `gui.py` script assuming you've installed the required packages.
+To get the project running you need python 3.6 and the packages outlined in the `requirements.txt` file installed. The installation guide bellow requires [Anaconda](https://www.anaconda.com/download/). 
+If you do not have Anaconda installed feel free to run the `gui.py` script assuming you've installed all required packages.
 
 ### Installation
 
@@ -26,7 +26,7 @@ If you do not have Anaconda installed feel free to run the `gui.py` script assum
 
 ##### Anaconda
 
-This will create a new virtual environment and install all the required python packages using the `requirements.txt` file. If you have an active venv with the required packages installed skip to changing directory into the cloned repository and running the `gui.py` with python.
+This will create a new virtual environment (venv) and install all required python packages to it using the `requirements.txt` file. If you have an active venv with the required packages installed skip to changing directory into the cloned repository and running `gui.py` with python.
 
 * In the anaconda prompt create a new environment
 
@@ -43,10 +43,10 @@ activate <venv name>
 * cd to the cloned repository
 
 ```
-cd path\to\clonedrepository
+cd path\to\repository
 ```
 
-* Get all specs in `requirements.txt`. The neccesary packages will be installed.
+* Add all specs in `requirements.txt` to the new venv. The necessary packages will be installed or updated.
 
 ```
 conda install --file requirements.txt
@@ -58,7 +58,7 @@ conda install --file requirements.txt
 python gui.py
 ```
 
-A minimal gui window created with tkinter should appear and the prompt should show the following verbose training message during which the window won't be responsive:
+Finally, a minimal gui window created with the tkinter library should appear and the anaconda prompt should show the following verbose training message during which the window won't be responsive:
 
 
 ```
@@ -87,7 +87,7 @@ Epoch 10/10
 NN Training Time: 47.921220541000366 sec
 ```
 
-After the neural network is trained the gui can be used to open image files (JPEG, JPG, PNG) and classify them to the 10 clothing categories of fashion MNIST.
+After the neural network is trained for 10 epochs the gui can be used to open image files (JPEG, JPG, PNG) and classify them to the 10 available categories/labels in the fashion MNIST dataset.
 
 ## Authors
 
